@@ -13,6 +13,7 @@
 		C1DB240126B53716009422F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DB23FF26B53716009422F6 /* Main.storyboard */; };
 		C1DB240326B5371C009422F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB240226B5371C009422F6 /* Assets.xcassets */; };
 		C1DB240626B5371C009422F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DB240426B5371C009422F6 /* LaunchScreen.storyboard */; };
+		C1DB241226B54F5F009422F6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB241126B54F5F009422F6 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C1DB240226B5371C009422F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DB240526B5371C009422F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1DB240726B5371C009422F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DB241126B54F5F009422F6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				C1DB23F926B53716009422F6 /* AppDelegate.swift */,
 				C1DB23FB26B53716009422F6 /* SceneDelegate.swift */,
-				C1DB23FD26B53716009422F6 /* ViewController.swift */,
 				C1DB23FF26B53716009422F6 /* Main.storyboard */,
+				C1DB23FD26B53716009422F6 /* ViewController.swift */,
+				C1DB241126B54F5F009422F6 /* ResultViewController.swift */,
+				C1DB241026B53771009422F6 /* Model */,
+				C1DB240F26B5374F009422F6 /* View */,
+				C1DB240D26B5372A009422F6 /* Controller */,
 				C1DB240226B5371C009422F6 /* Assets.xcassets */,
 				C1DB240426B5371C009422F6 /* LaunchScreen.storyboard */,
 				C1DB240726B5371C009422F6 /* Info.plist */,
 			);
 			path = BMI_Calc;
+			sourceTree = "<group>";
+		};
+		C1DB240D26B5372A009422F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1DB240F26B5374F009422F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1DB241026B53771009422F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +167,7 @@
 				C1DB23FE26B53716009422F6 /* ViewController.swift in Sources */,
 				C1DB23FA26B53716009422F6 /* AppDelegate.swift in Sources */,
 				C1DB23FC26B53716009422F6 /* SceneDelegate.swift in Sources */,
+				C1DB241226B54F5F009422F6 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Sairo.BMI-Calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Sairo.BMI-Calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
