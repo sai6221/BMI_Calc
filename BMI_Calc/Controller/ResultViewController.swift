@@ -9,13 +9,25 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var suggestionLabel: UILabel!
+    
+    var bmivalue: String?
+    var advice: String?
+    var color: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        bmiLabel.text = bmivalue
+        suggestionLabel.text = advice
+        view.backgroundColor = color
     }
     
-
+    @IBAction func rebuttonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
